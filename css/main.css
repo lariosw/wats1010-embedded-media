@@ -5,6 +5,261 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
+/* global */
+html {
+     color: black;
+     padding: 0;
  }
+
+body {
+    margin: 0;
+}
+
+a:hover {
+    color: white;
+}
+
+h1 {
+    padding-top: 200px;
+}
+
+h2 {
+   text-decoration: underline;
+    font-weight: 500;
+    text-align: center;
+}
+
+#watch h2 {
+    font-family: sans-serif;
+    color: white;
+    background-color: hotpink;
+    border: 2px solid black;
+    margin: 100px 178px 0px;
+}
+/* header */
+header {
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-image:url(../img/monkaa_title.jpg)
+}
+header .subtitle {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    font-size: 30px;
+    width: 313px;
+    position: relative;
+    top: 222px;
+    left: 50%;
+    margin-left: -156px;
+}
+
+
+/* header nav */
+
+header nav ul.main-nav{
+    top: 222px;
+}
+
+/* footer nav */
+footer nav ul.main-nav{
+    top: 0px;
+}
+
+/* all nav */
+nav ul.main-nav{
+    width: 505px;
+    position: relative;
+    margin-left: -289px;
+    left: 50%;
+}
+nav ul li {
+    display: inline;
+    font-size: medium;
+    border: 2px solid black;
+    padding: 5px 40px;
+    margin: 0 20px;
+    background-color: hotpink;
+}
+
+nav ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+/* social styles */
+#social {
+    background: hotpink;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width:48px;
+    transition: 2s width;
+}
+#social:hover {
+    width: 150px;
+}
+#social .social-links{
+    width:150px;
+    list-style-type: none;
+    padding: 0;
+}
+#social .social-links li{
+    margin-bottom:25px;
+    padding: 0;
+}
+#social .social-links li img{
+    margin: 0 5px -11px 6px;
+}
+
+
+/* */
+section#watch {
+    /*float: left;*/
+}
+section#about {
+    font-style: italic;
+    text-align: center;
+    color: aqua;
+    border: 2px solid black;
+    background-color: black;
+    font-family: monospace;
+    padding: 10px 5px 10px 5px;
+    
+}
+video {
+    width: 800px;
+    height: auto;
+    position: relative;
+}
+#watch {
+    text-align: center;
+}
+#watch p {
+    margin-bottom: 20px;
+}
+#watch .download-button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#watch div {
+    font-family: sans-serif;
+    font-style:italic;
+}
+a.download-button {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid black;
+}
+section h2{
+    margin-top: 50px;
+}
+audio {
+    position: relative;
+    left: 50%;
+    margin-left: -149px;
+}
+#listen {
+    width: 800px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 20px;
+}
+#listen audio {
+    /*margin-bottom: 100px;*/
+}
+
+#listen .listen-pict img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -130;
+}
+#listen h2 {
+    background-image: url(../img/monkaa_monkeyhang.jpg);
+    width: 400px;
+    height: 300px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    font-size: 30px;
+    width: 313px;
+    position: relative;
+    top: 55px;
+    left: 50%;
+    margin-left: -156px;
+}
+section .weybec-people {
+    list-style:none;
+    width: 565px;
+    margin: 0 auto;
+}
+section .weybec-people li {
+    width: 100px;
+    height: auto;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+/* about
+#about h2 {
+    margin: 20px auto;
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+    color: aqua;
+    border: 2px solid black;
+    background-color: black;
+} */
+#about .weybec-people img{
+    width:100%;
+    opacity: .4;
+}
+#about .weybec-people img:hover{
+    opacity: 1;
+}
+#about .weybec-people li{
+    display:inline-block;
+    margin: 0 25px;
+}
+
+/*footer */
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+}
+
+
+/* */
+.download-wrapper
+{
+    height: 92px;
+    overflow:hidden;
+    width: 570px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    transition: 1s height;
+}
+
+.download-wrapper:hover{
+    height: 200px;
+}
+.download-wrapper div{
+    text-align:center;
+}
+
+.download-wrapper a{
+    border: none;
+}
+
+#listen .download-wrapper{
+    width: 265px;
+}

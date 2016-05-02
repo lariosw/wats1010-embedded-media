@@ -7,22 +7,16 @@
         <title>Monkaa: Watch and Download the animated short film</title>
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Make a favicon that better represents the page. -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Made a favicon for the page. -->
+        <link rel="icon" href="/favicon-2.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
     </head>
-
+    
     <body>
 
         <header>
-            <!-- TODO: Create an elegant header using either one of the images
-                 or the video loop included in this repository. Make sure the
-                 page navigation is presented clearly and in a user-friendly
-                 way. Also, be sure to choose the proper image format as you
-                 insert backgrounds and other images into the page. Balance
-                 image quality with file size to achieve the best user
-                 experience. -->
-            <h1>Monkaa</h1>
+            <!-- Put background image for header. -->
+            
             <p class="subtitle">An open source short film</p>
             <nav>
                 <ul class="main-nav">
@@ -34,50 +28,72 @@
         </header>
 
         <aside id="social">
-            <!-- TODO: Experiment with different ways of making this set of
-                 share links stand out and stay near the user all the time.
-                 Try using 'absolute', 'fixed', or even 'sticky' positioning
-                 to achieve a user-friendly effect. You may also use the
-                 `:hover` pseudoselector to trigger height or width changes
-                 that could help you make a more interactive design. -->
-            <h2>Share</h2>
+            <!-- Made changes to social links adding icons and keeping it fixed -->
             <ul class="social-links">
-                <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
-                <li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-                <li class="instagram"><a href="http://instagram.com">Instagram</a></li>
+                <li class="twitter">
+                    <img src="icons/twitter.png">
+                    <a href="http://twitter.com">Twitter</a>
+                </li>
+                <li class="facebook">
+                    <img src="icons/facebook.png">
+                    <a href="http://facebook.com">Facebook</a>
+                </li>
+                <li class="instagram"><img src="icons/instragamicon.png">
+                    <a href="http://instagram.com">Instagram</a>
+                </li>
             </ul>
         </aside>
 
         <section id="watch">
             <h2>Watch</h2>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
+            <!-- Embeded video with controls. -->
 
             <!-- TODO: Style an elegant download link to download the video. -->
-            <h3>Download the video</h3>
-            <p>
-                Click below to download either MP4 or WEBM versions of this video.
-                <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
-                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
-            </p>
+            <video controls poster="media/video/video_poster.png">
+                <source src="media/video/monkaa_1080p.mp4" type="video/mp4">
+                <source src="media/video/monkaa_1080p.webm" type="video/webm">
+            
+            </video>
+            <div class="download-wrapper">
+            
+                <h3><img src="icons/download-logo.jpg"></h3>
+               <div>Click below to download either MP4 or WEBM versions of this video.</div>
+            
+        
+                <div>
+                    <a class="download-button" href="media/video/monkaa_1080p.mp4" target="_blank"><img src="icons/mp4_48.png"></a>
+                    <a class="download-button" href="media/video/monkaa_1080p.webm" target="_blank"><img src="icons/webmicon.png"></a>
+                </div>  
+            </div>  
         </section>
-
         <section id="listen">
+            
             <h2>Listen</h2>
-            <!-- TODO: Embed an audio player so users can play back the
-                 soundtrack MP3 directly on the page. -->
+            <!-- Embeded audio player. -->
 
             <!-- TODO: Style an elegant download link to download the video. -->
-            <p>
-                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">Download as MP3</a>
-            </p>
+    
+                <audio controls>
+                <source src="media/audio/monkaa_soundtrack.mp3"
+                type='audio/mp4'>
+                </audio>
+            
+            
+            <div class="download-wrapper">
+            
+                <h3><img src="icons/download-logo.jpg"></h3>
+               <div>Download as MP3</div>
+                <div>
+                    <a class="download-button" href="media/audio/monkaa_soundtrack.mp3"><img src="icons/mp3icon.png"></a>
+                </div>  
+            </div>
+            <video width="800" height="auto" controls loop>
+            <source src="media/video/flying_monkey_loop.mp4" type="video/mp4">
+            </video>
         </section>
 
         <section id="about">
-            <!-- TODO: Style this text so it is comfortable to read and nice
-                 to look at. Style the "lead" paragraph to be more eye-catching
-                 so that text stands out. -->
+            <!-- Styled text in lead section -->
             <h2>About</h2>
             <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 
@@ -86,17 +102,17 @@
                      each headshot below. Images are located in the
                      ``img/weybec/`` directory. -->
                 <li>
-                    <img class="headshot" src="TODO" alt="Pratik Solanki headshot"><br>
+                    <img class="headshot" src="img/weybec/pratik_solanki.gif" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Nita Ravalji headshot"><br>
+                    <img class="headshot" src="img/weybec/Nita-ravalji1.gif" alt="Nita Ravalji headshot"><br>
                     Nita Ravalji<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Niyal Parmar headshot"><br>
+                    <img class="headshot" src="img/weybec/niyal_parmar.gif" alt="Niyal Parmar headshot"><br>
                     Niyal Parmar<br>
                     Co-Founder
                 </li>

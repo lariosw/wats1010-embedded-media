@@ -1,4 +1,4 @@
-wats1010-embedded-media
+ and wats1010-embedded-media
 =======================
 
 This is the resource repository for the Embedded Media assignment, part of WATS
